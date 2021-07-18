@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    div{
+        float: left;
+        margin-left:50px;
+        margin-right: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 10px;
+        text-align: center;
+        border: 1px solid white;
+        width: 300px;
+        height: 180px;}
+    h2{
+        background-color: rgb(100, 32, 146);
+        color: rgb(255, 255, 255);
+        text-align:center;
+        padding: 10px;
+    }
+    body{
+         background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(75, 48, 172, 0.712));}
+    .mouse_event{
+        width: 100%;
+        height: 30px;
+        margin-left: 0px;
+        margin-bottom: 60px;
+        padding: 0%;
+        border: 0px;
+    }
+    .mouse_{
+        width: 100px;
+        height: 100px;
+        border: 1px;
+    }
+
+</style>
+</head>
+<body>
+
+<h2>Key Events</h2>
+  <div>
+    <p>Check if the key pressed is ALT, CTRL, META, SHIFT using event.Keyname</p>
+    <input type="text" onkeydown="isKeyPressed1(event)">    
+    <p id="demo1" style="color: rgb(139, 29, 243);"></p>    
+    <script>
+    function isKeyPressed1(event) {
+      var x1 = document.getElementById("demo1");
+      if (event.altKey) {
+        x1.innerHTML = "The ALT key is pressed!";
+      } 
+      else if(event.ctrlKey){
+        x1.innerHTML = "The CTRL key is pressed!";
+      }
+      else if(event.shiftKey){
+        x1.innerHTML = "The SHIFT key is pressed!";
+      }
+      else if(event.metaKey){
+        x1.innerHTML = "The META key is pressed!";
+      }
+      else{
+        x1.innerHTML = "Some other key is pressed!";
+      }
+    }
+    </script>
+  </div>
+  <div>
+    <p>Using getModifierState("keyname") (CapsLock,NumLock,control,alt,shift)</p>
+    <input type="text" onkeydown="myFunction2(event)">
+    <p id="demo2" style="color: rgb(139, 29, 243);"> </p>
+    <script>
+    function myFunction2(event) {
+      var x2 = event.getModifierState("Shift");
+      document.getElementById("demo2").innerHTML = "Pressing the shift key: " + x2;
+    }
+    </script>
+  </div>
+  <div>
+    <p>location of the key using event.location (0-standard keys, 1-Left, 2-Right, 3-Right Num</p>
+    <input type="text" onkeydown="myFunction3(event)">
+    <p id="demo3" style="color: rgb(139, 29, 243);"></p>
+    
+    <script>
+    function myFunction3(event) {
+      var x = event.location;
+      document.getElementById("demo3").innerHTML = "Key location: " + x;
+    }
+    </script>
+  </div>
+  <div>
+    <p>Alert when onkeydown(any key),onkeypress is made</p>
+    <input type="text" onkeypress="myFunction4()" placeholder="Onkeypress"><br><br>
+    <input type="text" onkeydown="myFunction41()" placeholder="Onkeydown">
+    <script>
+    function myFunction4() {
+      alert("onkeypress example");
+    }
+    function myFunction41() {
+      alert("onkeydown example");
+    }
+    </script>
+  </div>
+  <div>
+    <p>Using onkeyup.</p>
+    <input type="text" id="fname5"> 
+    <script>
+        document.getElementById("fname5").onkeyup = function() {myFunction5()};
+        function myFunction5() {
+          var x = document.getElementById("fname5");
+          x.value = x.value.toUpperCase();
+        }
+    </script>
+  </div>
+  <div>
+    <p>Onkey up </p>
+    <input type="text" id="fname6" onkeyup="myFunction6()">
+    <p>My name is: <span id="demo6" style="color: rgb(139, 29, 243);"></span></p>
+    <script>
+    function myFunction6() {
+      var x = document.getElementById("fname6").value;
+      document.getElementById("demo6").innerHTML = x;
+    }
+    </script>
+  </div>
+  <div>
+    <p>Style property in Onkeydown</p>
+    <input type="text" id="demo7">
+    <script>
+    document.getElementById("demo7").onkeydown = function() {myFunction7()};
+    function myFunction7() {
+      document.getElementById("demo7").style.backgroundColor = "skyblue";
+    }
+    </script>
+  </div>
+  <div>
+    <p>Using both onkeyup and Onkeydown</p>
+    <input type="text" id="demo8" onkeydown="keydownFunction8()" onkeyup="keyupFunction8()">
+    <script>
+    function keydownFunction8() {
+      document.getElementById("demo8").style.backgroundColor = "blue";
+    }
+    function keyupFunction8() {
+      document.getElementById("demo8").style.backgroundColor = "red";
+    }
+    </script>
+  </div>
+  <div>
+    <p>Using event.charCode</p>
+    <input type="text" onkeypress="myFunction9(event)">
+    <p id="demo9" style="color: rgb(139, 29, 243);"></p>
+    <script>
+    function myFunction9(event) {
+      var x = event.charCode;
+      document.getElementById("demo9").innerHTML = "The Unicode value is: " + x;
+    }
+    </script>
+  </div>
+  <div>
+    <p>Using event.which</p>
+    <input type="text" onkeypress="myFunction10(event)">
+    <p id="demo10" style="color: rgb(139, 29, 243);"></p>
+    <script>
+    function myFunction10(event) {
+      var x = event.which;
+      document.getElementById("demo10").innerHTML = "The Unicode value is: " + x;
+    }
+    </script>
+  </div>
+  <div>
+    <p>Using event.code (onkeydown)</p>
+    <input type="text" onkeydown="myFunction11(event)">
+    <p id="demo11" style="color: rgb(139, 29, 243);"></p>
+    <script>
+    function myFunction11(event) {
+      var x = event.code;
+      document.getElementById("demo11").innerHTML = "The pressed key was: " + x;
+    }
+    </script>
+  </div>
+  <div>
+    <p>Using event.Key<p>
+    <input type="text" onkeydown="myFunction12(event)">
+    <p id="demo12" style="color: rgb(139, 29, 243);"></p>
+    <script>
+    function myFunction12(event) {
+      var x = event.key;
+      document.getElementById("demo12").innerHTML = "The pressed key was: " + x;
+    }
+    </script>
+  </div>
+  <div class="mouse_event">
+    <h2>Mouse Events</h2>
+  </div>
+  <div>
+    <p onmousedown="isKeyPressed(event)"><br>onmousedown event <br> Alt key is pressed or not</p>
+    <script>
+    function isKeyPressed(event) {
+    if (event.altKey) {
+        alert("The ALT key is pressed!");
+    } else {
+        alert("The ALT key is NOT pressed!");
+    }
+    }
+    </script>
+  </div>
+  <div>
+    <p onmousedown="WhichButton(event)">onmousedown event <br>
+        0 = The left mouse button<br>
+        1 = The middle mouse button<br>
+        2 = The right mouse button
+    </p>
+      <script>
+      function WhichButton(event) {
+        alert("You pressed button: " + event.button)
+      }
+      </script>
+  </div>
+  <div>
+    <h3 onclick="showCoords(event)">Just click here to see co-ordinates</h3>
+    <p id="demo13"></p>  
+    <script>
+    function showCoords(event) {
+      var xx = event.clientX;
+      var yy = event.clientY;
+      var coords = "X coords: " + xx + ", Y coords: " + yy;
+      document.getElementById("demo13").innerHTML = coords;
+    }
+    </script>
+  </div>
+  <div>
+    <h1 onmouseover="getRelatedElement(event)">onmouse over</h1>
+    <script>
+    function getRelatedElement(event) { 
+      alert("onmouseover event");
+    }
+    </script>
+  </div>
+  <div>
+    <button onclick="myFunction_()" style="padding-top: 10px;">Onclick Event example</button>
+
+    <p id="demo_"></p>
+    
+    <script>
+    function myFunction_() {
+      document.getElementById("demo_").innerHTML = "on click event";
+    }
+    </script>
+  </div>
+  <div>
+    <p ondblclick="myFunctionn()">Double-click Event example</p>
+    <p id="demoo"></p>
+    <script>
+    function myFunctionn() {
+      document.getElementById("demoo").innerHTML = "you clicked twice";
+    }
+    </script>
+  </div>
+  <div>
+    <h3 id="bothevent" onmousedown="mouseDown()" onmouseup="mouseUp()">
+    onmousedown and onmouseup event 
+    </h3><p>color changed using style</p>
+        <script>
+        function mouseDown() {
+          document.getElementById("bothevent").style.color = "red";
+        }
+        function mouseUp() {
+          document.getElementById("bothevent").style.color = "green";
+        }
+        </script>
+  </div>
+  <div>
+    <p>onmouseover and onmouseout(onmouseenter onmouseleave</p>
+    <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="C:\Users\KK COMPUTERS\Desktop\Adobe_PIC\red_headset.jpg"  width="100" height="100">
+    <script>
+    function bigImg(x) {
+      x.style.height = "120px";
+      x.style.width = "120px";
+    }
+    function normalImg(x) {
+      x.style.height = "100px";
+      x.style.width = "100px";
+    }
+    </script>    
+  </div>
+</body>
+</html>

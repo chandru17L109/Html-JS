@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <style>
+            body{background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(142, 146, 137, 0.712));}
+            .ele1{
+                margin: 10px;
+                padding: 10px;
+                float: left;
+            }
+            h1{
+                text-align: center;
+                color: rgb(100, 100, 100);
+            }
+            .content1{
+                margin-left: 20px;
+                margin-right: 20px;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                padding: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h1>Html code using DOM structure</h1>
+            <div class="ele1">
+                <img src="C:\Users\KK COMPUTERS\Desktop\just\dom.jpg" width="550px" height="350px">
+            </div>
+            <div class="ele1">
+                <img src="C:\Users\KK COMPUTERS\Desktop\just\html-dom.jpg" width="550px" height="350px">
+            </div>
+            <div>
+                <h1 style="width:100px">DOM</h1>
+                <div class="content1">
+                    <p>DOM stands for Document Object Model.</p>
+                    <p> It is a standard defined by W3C (World Wide Web Consortium). DOM is a programming interface (API) for representing and interacting with HTML, XHTML and XML documents. It organize the elements of the document in tree structure (DOM tree) and in the DOM tree, all elements of the document are defined as objects (tree nodes) which have properties and methods.</p>
+                    <p> DOM tree objects can be accessed and manipulated with the help of any programming language since it is cross-platform and language independent. Typically, we manipulate DOM tree with the help of JavaScript and jQuery.</p>
+                    <pre> what are object model?</pre>
+                    <p>Documents are modeled using objects, and the model includes not only the structure of a document but also the behavior of a document and the objects of which it is composed of like tag elements with attributes in HTML.</p>
+                    <pre>Methods of Document Object:</pre> 
+                    <ul>
+                    <li>(“string”): writes the given string on the document.</li>
+                    <li>getElementById(): returns the element having the given id value.</li>
+                    <li>getElementsByName(): returns all the elements having the given name value.</li>
+                    <li>getElementsByTagName(): returns all the elements having the given tag name.</li>
+                    <li>getElementsByClassName(): returns all the elements having the given class name.</li>
+                    </ul>
+                    <figure style="margin-left: 50px;">
+                        <img src="C:\Users\KK COMPUTERS\Desktop\just\dom1.jpg" width="500px" height="300px">
+                        <figcaption>Sample of DOM structure</figcaption>
+                    </figure>
+                </div>
+                <h1 style="width:100px">BOM</h1>
+                <div class="content1">
+                   <p>Browser Object Model </p>
+                   <p> The BOM is a browser-specific convention referring to all the objects exposed by the web browser. The BOM allows JavaScript to “interact with” the browser.</p>
+                   <p>The Browser Object Model is a larger representation of everything provided by the browser including the current document, location, history, frames, and any other functionality the browser may expose to JavaScript. The Browser Object Model is not standardized and can change based on different browsers.</p>
+                   <p>The window object contains lots of properties (try console.dir( window );). </p>
+                   <p>Since DOM is one of the object of BOM, DOM is the child of BOM and they relate to each other. One can access document by simple writing document or window.document</p>
+                   <figure style="margin-left: 50px;">
+                    <img src="C:\Users\KK COMPUTERS\Desktop\just\dom2.jpg" width="500px" height="300px">
+                    <figcaption>Sample of BOM </figcaption>
+                    </figure>    
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

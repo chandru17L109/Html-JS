@@ -1,0 +1,45 @@
+.mainContainer{
+  box-sizing: border-box;
+  margin: 30px;
+}
+.handson-title{
+  text-decoration: underline;
+  margin-left: 20px;
+  color:  rgb(23, 53, 105) ;
+}
+.align{
+  float: left;
+}
+.outline,.DragTheButton1,.DragTheButton2{
+  border: 1px solid rgb(153, 153, 153);
+}
+.outline{
+  margin: 0px 0px 20px 20px;
+  height: 170px;
+  width: 170px;
+  font-size: 13px;
+  padding: 10px;
+  cursor: pointer;
+}
+.DragTheButton1,.DragTheButton2{
+  background-color: rgb(202, 202, 202);
+  width: 160px;
+  padding: 4px;
+  margin-top: 0px;
+  text-align: center;
+  font-weight: bold;
+}
+.scrollContent{
+  overflow: scroll;
+  background-color: yellow;
+}
+pre{
+  line-height: 0.3;
+}
+.DragContent,.scrollContent{
+  width: 170px;
+  height: 130px;
+}
+.DragTheButton2,.scrollContent{
+  cursor:auto;
+}

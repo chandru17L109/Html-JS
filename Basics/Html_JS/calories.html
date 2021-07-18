@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p>Creating a JavaScript Object.</p>
+    <form>
+        <table center>
+            <tr><td colspan="4">breakfast</td></tr> 
+            <tr>  
+            <td><input type="checkbox" name="mrg" value="Cats">Cats</td>     
+            <td><input type="checkbox" name="mrg" value="Dogs">Dogs</td>    
+            <td><input type="checkbox" name="mrg" value="Birds">Birds</td>      
+            </tr>     
+        </table>
+        <p>lunch</p>    
+        <input type="checkbox" name="mrg" value="Ca">Cats<br>      
+        <input type="checkbox" name="mrg" value="Dogs">Dogs<br>      
+        <input type="checkbox" name="mrg" value="Birds">Birds<br>      
+        <br>   
+        <p>dinner</p>    
+        <input type="checkbox" name="mrg" value="C">Cats<br>      
+        <input type="checkbox" name="mrg" value="D">Dogs<br>      
+        <input type="checkbox" name="mrg" value="B">Birds<br>      
+        <br>     
+        <input type="submit" value="Submit now" onclick="myfun()">         
+</form>
+<script>
+    function myfun(){
+        var checkboxes = document.getElementsByName('mrg');
+        var selected = [];
+        var res=0;
+        for (var i=0; i<checkboxes.length; i++) {
+            if (checkboxes[i].checked) {
+                selected.push(checkboxes[i].value);
+            }
+        }
+        for (i in selected){
+            document.writeln(selected[i]);
+        }
+        var person = {C:100, D:20, Ca:50, Cats:30};
+        for(i in selected){
+            for(j in person){
+                if(selected[i] == j){
+                    document.writeln(person[j]);
+                    res=res+person[j];
+                }
+            }
+        }
+        document.writeln(res);
+    }
+
+</script>
+</body>
+</html>

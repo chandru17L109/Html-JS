@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Toggle List and Grid View</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel ="stylesheet" href="CSS/css-style.css">
+<link rel = "stylesheet" href="CSS/all.css">
+</head>
+<body>
+    <div class="grid-icon">
+        <button class="btn" onclick="gridView()">
+            <span class="grid-icon-1"></span>
+            <span class="grid-icon-2"></span>
+            <span class="grid-icon-3"></span>
+            <span class="grid-icon-4"></span>
+        </button>
+    </div>
+
+    <div id="grid-container">
+        <div class="grid-main">
+            <div class="grid-cross-icon">
+                <span class="sub-grid-cross-icon" onclick="gridClose()">&times;</span>
+            </div>
+            <div class="grid-img-content0"></div>
+            <div class="grid-details-content" id="grid-content0">
+            </div><br>
+            <div class="grid-edit-delete">
+                <button class="btn" id="grid-Edit-option1" onclick="gridEditSave(this)">Edit</button>
+            </div>
+        </div>
+        <div class="grid-main">
+            <div class="grid-cross-icon">
+                <span class="sub-grid-cross-icon" onclick="gridClose()">&times;</span>
+            </div>
+            <div class="grid-img-content1">
+            </div>
+            <div class="grid-details-content" id="grid-content1"></div>
+            <br>
+            <div class="grid-edit-delete">
+                <button class="btn" id="grid-Edit-option2" onclick="gridEditSave(this)">Edit</button>
+            </div>
+        </div>
+        <div class="grid-main">
+            <div class="grid-cross-icon">
+                <span class="sub-grid-cross-icon" onclick="gridClose()">&times;</span>
+            </div>
+            <div class="grid-img-content2">
+            </div>
+            <div class="grid-details-content" id="grid-content2"></div>
+            <br>
+            <div class="grid-edit-delete">
+                <button class="btn" id="grid-Edit-option3" onclick="gridEditSave(this)">Edit</button>
+            </div>
+        </div>
+    </div>
+    <div class="list-icon">
+        <button class="btn" onclick="listView()">
+            <span class="list-icon-1"></span>
+            <span class="list-icon-2"></span>
+        </button>
+      </div>
+      
+      <div id="list-container">
+        <div class="list-content">
+            <table class="list-table" cellspacing = "3px">
+                <tr><td>Name</td><td>ID</td><td>Skills</td><td>Project</td><td>HCM</td><td></td></tr>
+            </table>
+        </div>
+        <div class="list-content">
+            <table class="list-table1" id="list-table-edit1" cellspacing = "3px">
+                <tr id="list-table-data0"></tr>
+            </table>
+        </div>
+        <div class="list-content">
+            <table class="list-table2" id="list-table-edit2" cellspacing = "3px">
+                <tr id="list-table-data1"></tr>
+            </table>
+        </div> 
+        <div class="list-content">
+            <table class="list-table3" id="list-table-edit3" cellspacing = "3px">
+                <tr id="list-table-data2"></tr>
+            </table>
+        </div> 
+      </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js-file/toggle-js.js"></script>
+</body>
+</html>

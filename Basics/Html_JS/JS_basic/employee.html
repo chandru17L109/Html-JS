@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        p{
+            color: rgb(247, 183, 105);
+        }
+    </style>
+</head>
+<body>
+<h1 style="color: rgb(241, 138, 11);"> Employee Details</h1>
+<script>
+class Employee {
+    constructor(EID,Ename,EDOB,EExperience,EBatch,Elocation) {
+        this.EID = EID;
+        this.Ename = Ename;
+        this.EDOB = EDOB;
+        this.EExperience = EExperience;
+        this.EBatch = EBatch;
+        this.Elocation = Elocation;
+    }
+
+    display() {
+        document.writeln("<p>Employee ID </p>" + this.EID + "<p> named </p>" + this.Ename + "<p> of Date of birth </p>" + this.EDOB + "<p> has Experience of </p>"  + this.EExperience + "<p> in </p>" + this.EBatch + "<p> Working in </p>" + this.Elocation);
+    }
+}
+let Emp1 = new Employee("989101","Chandru","09-12-98","1 month","React","Hosur");
+Emp1.display();
+
+</script>
+</body>
+</html>

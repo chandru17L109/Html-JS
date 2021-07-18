@@ -1,0 +1,165 @@
+body{
+  font-family: 'Calibri';
+}
+.topnav1 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+.topnav1-content-title {
+  float: left;
+  color: rgb(255, 255, 255);
+  font-size: 48pt;
+  padding-top: 21px;
+  margin-left: 60px;
+}
+.topnav1-content a {
+  float: right;
+  color: white;
+  text-align: center;
+  font-size: 16pt;
+  margin-right: 60px;
+  padding: 50px 0px;
+  text-decoration: none;
+}
+.topnav1-content a:hover {
+  color: rgb(179, 179, 179);
+}
+.topnav2 {
+  list-style-type: none;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(252, 252, 252);
+  margin: 0px 50px;
+}
+.topnav2-content a {
+  float: left;
+  font-size: 16pt;
+  display: block;
+  color: #333333;
+  text-align: center;
+  padding: 25px 10px;
+  text-decoration: none;
+}
+.topnav2-content-search {
+  float: right;
+  margin-right: 0px;
+  margin-top: 8px;
+  width: 250px;
+  height: 50px;
+}
+.topnav2-content a:hover {
+  color: #c0c0c0;
+}
+.main_column1 {
+  float: left;
+  margin: 20px;
+  width: 29%;
+}
+.main_column1 img{
+  margin-left: 50px;
+}
+.main_column1 h1{
+  font-size: 58px;
+  color: #333333;
+}
+.main_column1 p{
+  font-size: 18px;
+  color: #333333;
+}
+
+.main_row{
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #dfdfdf;
+}
+
+h2{
+  font-size: 30pt;
+  color: #333333;
+}
+.h2_firstletter{
+  margin-left: 60px;
+  font-size: 50pt;
+  color: #333333;
+}
+
+.dealsoftheday{
+  margin-left: 70px;
+  margin-right: 70px;
+  display: flex;
+  flex-direction: row;
+}
+.dealsoftheday_content {
+  width: 180px;
+  padding: 0px 10px;
+  text-align: center;
+}
+
+.dealsoftheday_content img {
+  width: 100%;
+  height: 200px;
+}
+.dealsoftheday_content p{
+  color: #333333;
+  font-size: 12pt;
+}
+.fashioncategories{
+  margin-left: 40px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.fashioncategories_content {
+  width: 230px;
+  height: 280px;
+  padding: 8px 10px;
+  margin: 20px;
+  text-align: center;
+  background-color: #dbf3fa
+}
+.fashioncategories_content img{
+  width: 100%;
+  height: 200px;
+}
+.fashioncategories_content p{
+  color: #333333;
+  font-size: 20pt;
+}
+.more-items{
+  margin-left: 50px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.more-items_content{
+  font-size: 14pt;
+  color: #333333;
+}
+
+.footer{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  background-color: #131a22;
+  color: white;
+}
+.footer_content{
+  margin-left: 50px;
+  margin-bottom: 100px;
+  margin-right: 30px;
+}
+.footer_content_data h1{
+  font-size: 18pt;
+}
+.footer_content_data{
+  list-style-type: none;
+  overflow: hidden;
+}
+.footer_content_data a{
+  text-decoration: none;
+  color: rgb(243, 243, 243);
+  font-size: 16pt;
+}

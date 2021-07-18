@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <body>
+            <form name = "myform" onsubmit="return check()">
+                <p>LOG IN</p>
+                <input type="text" id="fname" name="fname" placeholder="Username" required height="100px"><br><br>
+                <input type="password" id="fpass" name="fpass" placeholder="Password" required><br><br>
+                <input type="submit" value = "Login"> &nbsp; &nbsp; &nbsp;
+                <a href="#">Register</a> &nbsp; &nbsp;
+                <a href="#">Forget Password</a>
+            </form>
+            <script>
+                var grade='B';  
+                var result;  
+                switch(grade){  
+                case 'A':  
+                result="A Grade";  
+                break;  
+                case 'B':  
+                result="B Grade";  
+                break;  
+                case 'C':  
+                result="C Grade";  
+                break;  
+                default:  
+                result="No Grade";  
+                }  
+                document.write(result);  
+            </script>
+        </body>
+    </head>
+</html>

@@ -1,0 +1,33 @@
+.handson-title{
+    text-decoration: underline;
+    padding-bottom: 20px;
+    color:  rgb(0, 71, 194) ;
+}
+.grid{ 
+    width: 75%;
+    margin: auto;
+    margin-top: 60px;
+}
+table {
+    width: 100%;
+}
+th,td{
+    padding: 5px;
+}
+th{
+    background-color: rgb(40, 100, 204)    ;
+    color: white;
+    border: 1px solid white;
+}
+td {
+    border: 1px solid black;
+}
+
+.pagination-right{
+    float: right;
+    padding-top: 30px;
+}
+
+.activepage :active{
+    background-color: yellow !important;
+}

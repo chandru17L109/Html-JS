@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- REACT LIBRARY -->
+  <script src="https://unpkg.com/react@15.5.4/dist/react.js"></script>
+  <!-- REACT DOM LIBRARY -->
+  <script src="https://unpkg.com/react-dom@15.5.4/dist/react-dom.js"></script>
+  <!-- BABEL LIBRARY -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js"></script>
+  <link rel="stylesheet" href="css_fun_class.css">
+  <title>Class Components</title>
+</head>
+<body>
+  <div id="app">React has not rendered yet</div>
+
+  <script type="text/babel">
+    class Shapes extends React.Component {
+      render() {
+        return(
+          <h1>Circle, Square, Rectangle</h1>
+        );
+      }
+    }
+    class Circle extends React.Component {
+      render() {
+        return(
+          <h1 className="circle">Circle</h1>
+        );
+      }
+    }
+    class Square extends React.Component {
+      render() {
+        var squareStyle = {
+          width: 100,
+          height: 100,
+          backgroundColor: "orange"
+        }
+        return(
+          <h1 style={squareStyle}>Square</h1>
+        );
+      }
+    }
+    class Rectangle extends React.Component {
+      render() {
+        return(
+          <h1>Rectangle</h1>
+        );
+      }
+    }
+    class Welcome extends React.Component {
+      render() {
+        return(
+          <h1>Class, Using props - Hello, {this.props.name}</h1>
+        );
+       }
+     }
+
+    ReactDOM.render(
+      <div>
+        <Shapes/>
+        <Circle/>
+        <Square/>
+        <Rectangle/>
+        <Welcome name="Chandru"/>
+      </div>,
+      document.getElementById("app")
+    );
+
+  </script>
+
+</body>
+</html>

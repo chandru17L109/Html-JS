@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    body{background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(130, 247, 228, 0.87));}
+            
+    .part{
+        width: 100%;
+        height: auto;
+    }
+    button{
+        background-color: rgba(144, 163, 163, 0.267);
+        border: 0px solid;
+        border-radius: 15px;
+        margin: 10px;
+        padding: 10px;
+        width: 270px;
+        height: 50px;
+    }
+</style>
+</head>
+<body>
+<div>
+    <h1 style="text-align: center;">Window Objects</h1>
+    <div class="part">
+        <hr>
+        <button onclick="openWin()">Open "myWindow"</button>
+        <button onclick="myFunction1()">Text</button>
+        <button onclick="closeWin()">Close "myWindow"</button>
+        <button onclick="checkWin()">Has "myWindow" been closed?</button>
+        <p id="msg" style="margin-left: 50px;"></p>
+        <script>
+            var myWindow;
+            function openWin() {
+            myWindow = window.open("", "myWindow", "width=400, height=200");
+            }
+            function closeWin() {
+            if (myWindow) {
+                myWindow.close();
+            }
+            }
+            function checkWin() {
+            if (!myWindow) {
+                document.getElementById("msg").innerHTML = "'myWindow' has never been opened!";
+            } else {
+                if (myWindow.closed) { 
+                document.getElementById("msg").innerHTML = "'myWindow' has been closed!";
+                } else {
+                document.getElementById("msg").innerHTML = "'myWindow' has not been closed!";
+                }
+            }
+            }
+            function myFunction1() {
+                myWindow.document.write("<p> HAii I'am Chandru </p>");}
+        </script>
+    </div>
+    <div class="part">
+        <hr>
+        <button onclick="myFunction21()">Confirm button</button>
+        <button onclick="myFunction22()">Alert button</button>
+        <button onclick="myFunction23()">Prompt button</button>
+        <button onclick="myFunction24()">setTimeout 2S</button>
+        <script>
+        function myFunction21() {
+            confirm("button is pressed!");}
+        function myFunction22() {
+            alert("button is pressed!");}
+        function myFunction23() {
+            prompt("Please enter your name", "Danial");}
+        function myFunction24() {
+            setTimeout(function(){ alert("Hello"); }, 2000);}
+        </script>
+    </div>
+    <div>
+        <hr>
+        <button onclick="openWin()">Create window</button>
+        <button onclick="resizeWin()">Resize window</button>
+        <button onclick="moveWin()">Move window</button>
+        <script>
+        function openWin() {
+            myWindow = window.open("", "", "width=100, height=100");}
+        function resizeWin() {
+            myWindow.resizeBy(250, 250);
+            myWindow.focus();}
+        function moveWin() {
+            myWindow.moveBy(350, 350);
+            myWindow.focus();}
+        </script>
+    </div>
+    <div>
+        <hr>
+        <ul><li>console.assert(document.getElementById("demo"), "You have no element with ID 'demo'");</li>
+            <li>console.error("You made a mistake");</li>
+            <li>console.warn("This is a warning!");</li>
+            <li>console.info("Hello world!");</li>
+            <li>console.table(["chandru", "Anamika", "Ananya"]);</li>
+            <li>console.log("Hello! Press the button to clear the console!");</li>
+        </ul>
+        <button onclick="myFunction3()">Clear Console</button>
+        <script>
+            console.assert(document.getElementById("demo"), "You have no element with ID 'demo'");  
+            console.error("You made a mistake"); 
+            console.warn("This is a warning!");   
+            console.info("Hello world!");
+            console.table(["chandru", "Anamika", "Ananya"]);
+            console.log("Hello! Press the button to clear the console!");
+            function myFunction3() {
+                console.clear();}
+        </script>
+    </div>
+    <div>
+        <hr>
+        <button onclick="myFunction4()">Width,Height</button>
+        <button onclick="myFunction6()">matchMedia</button>
+        <p id="demo4"></p>
+        <p id="demo6"></p>
+            <script>
+            function myFunction4() {
+            var w = window.outerWidth;
+            var h = window.outerHeight;
+            var w1 = window.innerWidth;
+            var h1 = window.innerHeight;
+            document.getElementById("demo4").innerHTML = "OuterWidth: " + w + " OuterHeight: " + h +  " InnerWidth: " + w1 + " InnerHeight: " + h1;
+            }
+            function myFunction6() {
+                var x = document.getElementById("demo6");
+                if (window.matchMedia("(max-width: 700px)").matches) {
+                    x.innerHTML = "The screen is less than, or equal to, 700 pixels wide.";
+                } else {
+                    x.innerHTML = "The screen is at least 700 pixels wide.";}
+                }
+        </script>
+    </div>
+    <div>
+        <hr>
+        <p>Using localStorage - lastname :<span id="result"> </span></p>
+        <p>Using SessionStorage - lastname :<span id="result1"> </span></p>
+        <script>
+        if (typeof(Storage) !== "undefined") {
+          localStorage.setItem("lastname", "Anamika");
+          document.getElementById("result").innerHTML = localStorage.getItem("lastname");}
+        if (typeof(Storage) !== "undefined") {
+          sessionStorage.setItem("lastname", "ziva");
+          document.getElementById("result1").innerHTML = sessionStorage.getItem("lastname");}
+        </script>
+    </div>
+    <div>
+        <hr>
+        <button onclick="myFunction7()">Encode, Decode</button>
+        <button onclick="myFunction8()">Check Cookies</button>
+        <p id="demo7"></p>
+        <p id="demo8"></p>
+        <script>
+        function myFunction7() {
+        var str = "Chandru";
+        var enc = window.btoa(str);
+        var dec = window.atob(enc);
+        var res = "Encoded String: " + enc + "<br>" + "Decoded String: " + dec;
+        document.getElementById("demo7").innerHTML = res;
+        }
+            function myFunction8() {
+            var x = "Cookies enabled: " + navigator.cookieEnabled;
+            document.getElementById("demo8").innerHTML = x;
+            }
+        </script>
+    </div>
+</div>
+</body>
+</html>

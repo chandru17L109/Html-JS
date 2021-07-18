@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>test bootstrap</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="bootstrap_style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" >
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" ></script>
+    </head>
+<body>
+    <h1>Acart</h1>
+    <div class="container">
+            <ul class="list-inline">
+             <br><a class="btn btn-outline-primary L_size_top_login" href="bootstrap-login.html" role="button">Login</a> &nbsp; &nbsp; &nbsp;
+             <a class="btn btn-info L_size_top_signup" href="bootstrap-signup.html" role="button">Signup</a>
+            </ul>
+        <div class="row">
+            <div class="col-sm-3">
+            </div>
+            <div class="col-sm-6">
+                <div class="row">
+                    <form>
+                        <div class="form-group">
+                          <label for="Username">User name</label>
+                          <input type="text" class="form-control" id="S_user">
+                        </div>
+                        <div class="form-group">
+                           <label for="password">Set Password</label>
+                           <input type="password" class="form-control" id="S_pass">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email-Id</label>
+                            <input type="email" class="form-control" id="S_email">
+                          </div>
+                        <div class="form-group">
+                             <label for="Age">Age</label>
+                             <input type="number" class="form-control" min="12" id="S_age">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+        <ul class="list-inline">
+        <br><a class="btn btn-success size_loginp" href="bootstrap-login.html" role="button" onclick="return(validateForm());">Login</a>        
+        </ul>
+        <p id="demo"></p>
+    </div>
+    <script>
+    function validateForm(){
+        var S_name1 = document.getElementById('S_user').value;
+            if(S_name1.length == 0){
+                alert("Please enter username");
+                return false;
+            }
+            else if (S_name1.length < 5 || S_name1.length > 25) {
+                alert("Name length must be greater than 4 and less than 25");
+                return false;
+            }
+        var S_pass1 = document.getElementById('S_pass').value;
+            if(S_pass1.length == 0){
+                alert("Please enter Password");
+                return false;
+            }
+            else if (S_pass1.length < 8) {
+                alert("password length should be greater than 7");
+                return false;
+            }
+        var S_email1 = document.getElementById('S_email').value;
+        atpos = S_email1.indexOf("@");
+        dotpos = S_email1.lastIndexOf(".");
+            if(S_email1.length == 0){
+                alert("Please enter Email-id");
+                return false;
+            }
+            else if (atpos < 1 || dotpos < 1|| ( dotpos - atpos < 2 ) || (S_email1.length - dotpos < 2)) {
+                alert("Please enter correct S_email1 ID")
+                return false;
+            }
+        var S_age1 = document.getElementById('S_age').value;
+            if(S_age1.length == 0){
+                alert("Please enter Age");
+                return false;
+            }
+            else if (S_age1 < 12) {
+                alert("Age should be greater than 11");
+                return false;
+            }
+        sessionStorage.setItem("S_name11", S_name1);
+        sessionStorage.setItem("S_email11", S_email1);
+        sessionStorage.setItem("S_pass11", S_pass1);
+        sessionStorage.setItem("S_age11", S_age1);
+        return alert("User Registered Successfully!");
+    }
+    </script>
+</body>
+</html>

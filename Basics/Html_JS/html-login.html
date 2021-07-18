@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Html page</title>
+    <style>
+        .container{
+            margin: 100px;
+            text-align: center;
+        }
+        input{
+            width: 200px;
+            height: 30px;
+        }
+        a{
+            border: 1px solid rgb(212, 212, 212);
+            padding: 10px;
+            background-color:  rgb(212, 212, 212);
+        }
+    </style>
+</head>
+<body style="background-image:linear-gradient(to left, rgba(247, 247, 247, 0.705), rgb(255, 255, 255));">
+    <h1 style="text-align: center; color: rgb(59, 52, 52);">Login page using html and css</h1>
+    <div class="container">
+        <form>
+            <fieldset>
+                <legend>Login</legend>
+                Username : <input type="text" id="fname" name="fname" required ><br><br>
+                Password : <input type="password" id="lname" name="lname" required><br><br>
+                <input type="button" value = "Login">
+                <a href="#">Register</a>
+                <a href="#">Forget Password</a>
+            </fieldset>
+        </form><br><br><br>
+        <a href="bootstrap-login.html" onclick="return confirm('Do you want to change this page using Bootstrap?')">Change this page using Bootstrap</a>
+    </div>
+</body>
+</html>

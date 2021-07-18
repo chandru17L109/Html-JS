@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- REACT LIBRARY -->
+  <script src="https://unpkg.com/react@15.5.4/dist/react.js"></script>
+  <!-- REACT DOM LIBRARY -->
+  <script src="https://unpkg.com/react-dom@15.5.4/dist/react-dom.js"></script>
+  <!-- BABEL LIBRARY to interprate jsx to js-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js"></script>
+  <title>JSX</title>
+</head>
+<body>
+  <div id="a1">React has not rendered yet</div>
+  <script type="text/babel">
+  //var content1 = <h1> Welcome to React </h1>;
+  //var destination1 = document.getElementById("a1");
+  var ColorSpectrum = <h1>Red, Orange, Yellow, Green, Blue, Indigo, Violet</h1>;
+  //---stateless functional components
+  /*var ColorSpectrum = function() {
+      return(
+        <h1>Red, Orange, Yellow, Green, Blue, Indigo, Violet</h1>
+      );
+    }*/
+    ReactDOM.render(
+      // --------syntax what content , what location
+      //<h1>Hello REACT</h1>,
+      //<p>View  <a href = "https://reactjs.org/">reactls.org</a> page</p>,
+      // -------sub-tags can be used---------
+      //<ul>
+        //<li>Rahane</li>
+        //<li>Ashwin</li>
+      //</ul>,
+      //document.getElementById("a1")
+      //-------another method ---------
+       /*content1,
+       destination1 */
+       //---------multiple tags --------
+       /*<div>
+        <h1>  Welcome to React </h1>
+        <h3>  Hello React</h3>
+      </div>,
+      document.getElementById("a1")*/
+      //ColorSpectrum,
+      ColorSpectrum,
+      document.getElementById("a1")
+    );
+
+  </script>
+</body>
+</html>

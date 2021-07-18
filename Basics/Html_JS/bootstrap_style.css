@@ -1,0 +1,27 @@
+body{background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(150, 219, 236, 0.61));}
+h1{
+background-image: linear-gradient(to left, rgba(230, 230, 230, 0.76), rgba(29, 210, 223, 0.733));
+color: rgb(255, 255, 255);
+font-family:'Times New Roman', Times, serif;
+font-weight: bold;
+padding: 20px;}
+label{
+    font-size: 20px;
+    color: rgb(168, 167, 167);
+    font-family: cursive;
+}
+ul{
+    text-align: center;
+}
+.L_size_top_login{
+    width: 100px;
+    height: 43px;
+}
+.L_size_top_signup{
+    width: 100px;
+    height: 43px;
+}
+.size_loginp{
+    width: 150px;
+    height: 43px;
+}

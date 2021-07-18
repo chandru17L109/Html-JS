@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>login bootstrap</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" >
+        <link rel="stylesheet" href="bootstrap_style.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" ></script>
+    </head>
+<body>
+    <h1>Acart</h1>
+    <div class="container">
+            <ul class="list-inline">
+             <br><a class="btn btn-info L_size_top_login" href="bootstrap-login.html" role="button">Login</a> &nbsp; &nbsp; &nbsp;
+             <a class="btn btn-outline-primary L_size_top_signup" href="bootstrap-signup.html" role="button">Signup</a>
+            </ul>
+        <div class="row">
+            <div class="col-sm-3">
+            </div>
+            <div class="col-sm-6">
+                <div class="row">
+                    <form>
+                        <div class="form-group">
+                          <label for="Username">User name</label>
+                          <input type="text" class="form-control" id="User">
+                        </div>
+                        <div class="form-group">
+                           <label for="password">Password</label>
+                           <input type="password" class="form-control" id="pass">
+                        </div>
+                        <div><br>
+                            <a class="btn btn-outline-secondary" href="#" role="button">Forgot password</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+        <ul class="list-inline">
+        <br><a class="btn btn-success size_loginp" href="food.html" role="button" onclick="return(validateForm());">Login</a>        
+        </ul>
+    </div>
+    <script>
+    function validateForm(){
+        var name1 = document.getElementById('User').value;
+            if(name1.length == 0){
+                alert("Please enter username");
+                return false;
+            }
+            else if (name1.length < 5 || name1.length > 25) {
+                alert("Name length must be greater than 4 and less than 25");
+                return false;
+                }
+        var pass1 = document.getElementById('pass').value;
+            if(pass1.length == 0){
+                alert("Please enter Password");
+                return false;
+            }
+            else if (pass1.length < 8) {
+                alert("password length should be greater than 7");
+                return false;
+            }
+        var S_name_1 = sessionStorage.getItem("S_name11");
+        var S_pass_1 = sessionStorage.getItem("S_pass11");
+        if(S_name_1 == name1){
+            if(S_pass_1 == pass1){
+                return alert("User Logedin  Successfully!");
+            }
+            alert("password is mismatched");
+            return false;
+        }
+        alert("User doesn't exists!");
+        return false;
+    }
+    </script>
+</body>
+</html>

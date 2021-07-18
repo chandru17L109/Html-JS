@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>bootstrap</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+     </head>
+<body>
+  <h1 class="p-4 mb-2 bg-info text-white text-center">Bootstrap 4</h1> 
+  <h3>
+    No Container is used
+  </h3>
+  <div class="jumbotron">
+      <span class="badge badge-pill badge-primary float-right">Batch(span)</span>
+      <a href="#" class="badge badge-success float-right mr-2">Batch(link)</a>
+      jumbotron not inside container
+  </div>
+  <div class="container-fluid">
+      <h3>container-fluid is used</h3>
+      <div class="jumbotron">
+        jumbotron inside container-fluid
+      </div>
+  </div>
+<div class="container">
+    <h3>Container is used</h3>
+    <div class="jumbotron text-center">
+        <h1><span class="border border-danger">Cognizant Interns</span></h1>
+    </div>
+<h3>Tables</h3>
+<div class="row">
+   <div class="col-sm-6">
+    <h6>table table-striped table-bordered</h6>
+    <table class="table table-striped table-bordered">
+        <thead>
+        <tr>
+            <th>Employee Id</th><th>Name</th><th>Batch No.</th><th>Trainer Name</th><th>Location</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>900812</td><td>Abirami</td><td rowspan=4 class="text-center">13</td><td rowspan=4>Purna Chandra</td><td>Pune</td>
+            </tr>
+            <tr>
+                <td>900822</td><td>Akilan</td><td>chennai</td>
+            </tr>
+            <tr>
+                <td>900212</td><td>Anand</td><td>coimbature</td>
+            </tr>
+            <tr>
+                <td>910812</td><td>Balram</td><td>Bangalore</td>
+            </tr>
+        </tbody>
+    </table>
+  </div>
+  <div class="col-sm-6">
+    <h6>table table-dark table-hover</h6>
+    <table class="table table-dark table-hover">
+        <thead>
+        <tr>
+            <th>Employee Id</th><th>Name</th><th>Batch No.</th><th>Trainer Name</th><th>Location</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>900812</td><td>Abirami</td><td rowspan=4 class="text-center">13</td><td rowspan=4>Purna Chandra</td><td>Pune</td>
+            </tr>
+            <tr>
+                <td>900822</td><td>Akilan</td><td>chennai</td>
+            </tr>
+            <tr>
+                <td>900212</td><td>Anand</td><td>coimbature</td>
+            </tr>
+            <tr>
+                <td>910812</td><td>Balram</td><td>Bangalore</td>
+            </tr>
+        </tbody>
+    </table>
+  </div>
+</div>
+    <form>
+        <h5>Default Form</h5> 
+        <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+              
+                <label for="pwd">Password:</label>
+                <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pass">
+            <div class="container"> 
+                <br><button type="button" class="btn btn-success">Login</button>  
+            </div> 
+        </div>
+    </form> 
+    <hr>
+    <h5>Inline Form</h5>  
+    <form class="form-inline"> 
+        <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+              
+                <label for="pwd">Password:</label>
+                <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pass">
+              <button type="button" class="btn btn-success">Login</button>  
+        </div>
+    </form> 
+    <hr>
+    <form class="form-horizontal" > 
+        <h5>Horizontal Form</h5> 
+        <div class="form-group row">
+            <label for="email" class="col-sm-2 col-form-label">Email:</label>
+            <div class="col-sm-10">
+                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="pwd" class="col-sm-2 col-form-label">Password:</label>
+            <div class="col-sm-10">
+                <input type="password" class="form-control" id="pass" placeholder="Enter password" name="pass">
+            </div>
+        </div>
+        <div class="container"> 
+            <button type="button" class="btn btn-success">Login</button>  
+        </div> 
+    </form>
+<hr>
+<h3>alert alert-primary</h3>
+  <div class="alert alert-primary" role="alert">
+    This is a primary alert—check it out!
+  </div>
+  <div class="alert alert-secondary" role="alert">
+    This is a success alert—check it out!
+  </div>
+  <div class="alert alert-danger" role="alert">
+    This is a danger alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+  </div>
+  <div class="alert alert-success" role="alert">
+    <h4 class="alert-heading">Well done!</h4>
+    <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+    <hr>
+    <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+  </div>
+  <div class="alert alert-warning alert-dismissible fade show fixed-bottom" role="alert">
+    <strong>We accept cookies</strong> Enable cookies will help to make interaction faster.
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+      <button type="button" class="btn btn-success float-right">Accept</button>
+    </button>
+  </div>
+     <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>Class name</th>
+            <th>Description</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>xs</td>
+                <td>for phones - screens less than 768px wide</td>
+            </tr>
+            <tr>
+                <td>sm</td>
+                <td>for tablets - screens equal to or greater than 768px wide</td>
+            </tr>
+            <tr>
+                <td>md</td>
+                <td>for small laptops - screens equal to or greater than 992px wide</td>
+            </tr>
+            <tr>
+                <td>lg</td>
+                <td>for laptops and desktops - screens equal to or greater than 1200px wide</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <h5> Columns(max-12)</h5>
+    <hr>
+        <div class="row">
+        <div class="col-sm-4 bg-info text-white"> bg-info - <abbr title="HyperText Markup Language" class="initialism">HTML</abbr> Axar Patel, Man of the Match: When it happens, it feels so easy. I am not thinking much. I want to continue this form. I am happy that if I am not contributing with the bat, I am doing it with the ball. My strength is to bowl wicket-to-wicket and not give him room. The mindset of batters is they play out couple of maidens, they either go for a sweep or try to hit over the infield. They call me Wasim bhai (Wasim Akram) because they feel my arm ball is very lethal. </div>
+        <div class="col-sm-4 text-uppercase"> text-uppercase Axar Patel, Man of the Match: When it happens, it feels so easy. I am not thinking much. I want to continue this form. I am happy that if I am not contributing with the bat, I am doing it with the ball. My strength is to bowl wicket-to-wicket and not give him room. The mindset of batters is they play out couple of maidens, they either go for a sweep or try to hit over the infield. They call me Wasim bhai (Wasim Akram) because they feel my arm ball is very lethal. </div>
+        <div class="col-sm-4 text-warning">text-warning - Axar Patel, Man of the Match: When it happens, it feels so easy. I am not thinking much. I want to continue this form. I am happy that if I am not contributing with the bat, I am doing it with the ball. My strength is to bowl wicket-to-wicket and not give him room. The mindset of batters is they play out couple of maidens, they either go for a sweep or try to hit over the infield. They call me Wasim bhai (Wasim Akram) because they feel my arm ball is very lethal. </div>
+        </div>
+      <hr>
+      <div class="row">
+        <div class="col-sm-2 font-italic ">font-italic - Ravi Ashwin - Pleasant experience (on reaching 400 Test wickets), good that it happened in a winning cause. It was nice to get the crowd on my back and applauding the effort. </div>
+        <div class="col-sm-4 text-success">Axar Patel, Man of the Match: When it happens, it feels so easy. I am not thinking much. I want to continue this form. I am happy that if I am not contributing with the bat, I am doing it with the ball. My strength is to bowl wicket-to-wicket and not give him room. The mindset of batters is they play out couple of maidens, they either go for a sweep or try to hit over the infield. They call me Wasim bhai (Wasim Akram) because they feel my arm ball is very lethal. </div>
+        <div class="col-sm-2">Ravi Ashwin - Pleasant experience <mark>(on reaching 400 Test wickets)</mark>, good that it happened in a winning cause. It was nice to get the crowd on my back and applauding the effort. </div>
+        <div class="col-sm-4 bg-warning text-white">Axar Patel, Man of the Match: When it happens, it feels so easy. I am not thinking much. I want to continue this form. I am happy that if I am not contributing with the bat, I am doing it with the ball. My strength is to bowl wicket-to-wicket and not give him room. The mindset of batters is they play out couple of maidens, they either go for a sweep or try to hit over the infield. They call me Wasim bhai (Wasim Akram) because they feel my arm ball is very lethal. </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-sm-4">Axar Patel, Man of the Match: When it happens, it feels so easy. <small class="text-muted"> (small tag - class=text-muted)I am not thinking much. I want to continue this form. I am happy that if I am not contributing with the bat, I am doing it with the ball.</small> My strength is to bowl wicket-to-wicket and not give him room. The mindset of batters is they play out couple of maidens, they either go for a sweep or try to hit over the infield. They call me Wasim bhai (Wasim Akram) because they feel my arm ball is very lethal. </div>
+        <div class="col-sm-2 bg-dark text-white">Ravi Ashwin - Pleasant experience (on reaching 400 Test wickets), good that it happened in a winning cause. It was nice to get the crowd on my back and applauding the effort. </div>
+        <div class="col-sm-2 ">Ravi Ashwin - Pleasant experience (on reaching 400 Test wickets), good that it happened in a winning cause. It was nice to get the crowd on my back and applauding the effort. </div>
+        <div class="col-sm-2">Ravi Ashwin - Pleasant experience (on reaching 400 Test wickets), good that it happened in a winning cause. It was nice to get the crowd on my back and applauding the effort. </div>
+        <div class="col-sm-2 text-primary">Ravi Ashwin - Pleasant experience (on reaching 400 Test wickets), good that it happened in a winning cause. It was nice to get the crowd on my back and applauding the effort. </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-sm-1 text-danger">Joe Root: We were 70 for 2. But we didn't really capitalize on it.  </div>
+        <div class="col-sm-2 lead"> Class - lead. Ashwin - Pleasant experience (on reaching 400 Test wickets), good that it happened in a winning cause. </div>
+        <div class="col-sm-3">Joe Root: We were 70 for 2. But we didn't really capitalize on it.  We will come back using this hurt and come back as a better team. The plastic coating on the ball gathered pace off the wicket. It was high quality bowling as well. Both sides struggled on that wicket.</div>
+        <div class="col-sm-4 bg-success text-white">Axar Patel, Man of the Match: When it happens, it feels so easy. I am not thinking much. I want to continue this form. I am happy that if I am not contributing with the bat, I am doing it with the ball. My strength is to bowl wicket-to-wicket and not give him room. The mindset of batters is they play out couple of maidens, they either go for a sweep or try to hit over the infield. They call me Wasim bhai (Wasim Akram) because they feel my arm ball is very lethal. </div>
+        <div class="col-sm-1">Joe Root: We were 70 for 2. But we didn't really capitalize on it.  </div>
+        <div class="col-sm-1">Joe Root: We were 70 for 2. But we didn't really capitalize on it.  </div>
+      </div>
+   
+      <hr>
+        <h5>different Lists using Bootstrap</h5>
+      <hr>
+        <div class="row">
+            <div class="col-sm-2">
+                <h6>Unordered List</h6>
+                <ul>
+                <li>Virat Kohli</li>
+                <li>Rohit Sharma</li>
+                <li>Shubman Gill</li>
+                </ul>      
+            </div>
+            <div class="col-sm-3">
+            <h6>Ordered List</h6>
+            <ol>
+                <li>Hardik Pandya</li>
+                <li>Ravichandran Ashwin</li>
+                <li>Ravichandran Jadeja</li>
+                </ol> 
+            </div>
+            <div class="col-sm-3">
+                <h6>List-unstyled</h6>
+                <ul class="list-unstyled">
+                    <li>Rishabh Pant</li>
+                    <li>KL Rahul</li>
+                    <li>Wriddhiman Saha </li>
+                  </ul>
+            </div>
+            <div class="col-sm-4">
+            <h6>List-inline</h6>
+            <ul class="list-inline">
+                <li class="list-inline-item">Home</li>
+                <li class="list-inline-item">Products</li>
+                <li class="list-inline-item">About Us</li>
+                <li class="list-inline-item">Contact</li>
+            </ul>
+            </div>
+        </div>
+        <hr>
+        <h6>Description List</h6>
+        <dl class="row">
+            <dt class="col-sm-3">Ajinkya Rahane</dt>
+            <dd class="col-sm-9">
+              Test debut vs Australia at Arun Jaitley Stadium, Mar 22, 2013
+              ODI debutvs England at Riverside Ground, Sep 03, 2011
+              T20 debut vs England at Emirates Old Trafford, Aug 31, 2011
+              IPL debutvs Deccan Chargers at Dr DY Patil Sports Academy, Apr 27, 2008
+            </dd>
+            <dt class="col-sm-3">Kane Williamson</dt>
+            <dd class="col-sm-9">
+              Test debutvs India at Narendra Modi Stadium, Nov 04, 2010
+              ODI debutvs India at Rangiri Dambulla International Stadium, Aug 10, 2010
+              T20 debutvs Zimbabwe at Harare Sports Club, Oct 15, 2011
+              IPL debutvs Chennai Super Kings at MA Chidambaram Stadium, Apr 11, 2015
+            </dd>
+            <dt class="col-sm-3">Steven Smith</dt>
+            <dd class="col-sm-9">
+              Test debutvs Pakistan at Lord's, Jul 13, 2010
+              ODI debutvs West Indies at Melbourne Cricket Ground, Feb 19, 2010
+              T20 debutvs Pakistan at Melbourne Cricket Ground, Feb 05, 2010
+              IPL debutvs Mumbai Indians at Wankhede Stadium, Apr 06, 2012
+            </dd>
+        </dl>
+        <div class="row">
+          <hr>
+          <div class="col-sm-6">
+                  <h6>List Group</h6> 
+                  <ul class="list-group">
+                    <li class="list-group-item text-muted">text-muted</li>
+                    <li class="list-group-item active"> active</li>
+                    <li class="list-group-item disabled"> disabled</li>
+                    <a href="#" class="list-group-item list-group-item-action">With-Link</a>
+                    <button type="button" class="list-group-item list-group-item-action">With-Button</button>
+                  </ul>
+          </div>
+          <div class="col-sm-6">
+            <h6>Colouring the List</h6> 
+            <ul class="list-group">
+              <li class="list-group-item list-group-item-light">list-group-item-light</li>
+              <li class="list-group-item list-group-item-primary">list-group-item-primary</li>
+              <li class="list-group-item list-group-item-dark">list-group-item-dark</li>
+              <a href="#" class="list-group-item list-group-item-action list-group-item-info">With-Link list-group-item-info</a>
+              <a href="#" class="list-group-item list-group-item-action list-group-item-success">With-Link list-group-item-success</a>
+          </div>
+        </div>
+        <div class="row">
+          <hr>
+          <div class="col-sm-12">
+          <h6>List Group With Custom Content</h6>
+            <div class="list-group">
+              <a href="https://www.cricbuzz.com/cricket-stats/icc-rankings/men/batting" class="list-group-item active">
+                <h6 class="list-group-item-heading">ICC Cricket Ranking - Men's TEST NO 1</h6>
+                <p class="list-group-item-text">Kane Williamson</p>
+              </a>
+              <a href="https://www.cricbuzz.com/cricket-stats/icc-rankings/men/batting" class="list-group-item">
+                <h6 class="list-group-item-heading">ICC Cricket Ranking - Men's ODI NO 1</h6>
+                <p class="list-group-item-text">Virat Kohli</p>
+              </a>
+              <a href="https://www.cricbuzz.com/cricket-stats/icc-rankings/men/batting" class="list-group-item">
+                <h6 class="list-group-item-heading">ICC Cricket Ranking - Men's T20 NO 1</h6>
+                <p class="list-group-item-text">Dawid Malan</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-sm-4">
+            <h6>Buttons(btn btn-primary)</h6>
+            <button type="button" class="btn btn-primary" disabled>Primary</button>
+            <button type="button" class="btn btn-secondary">Secondary</button>
+            <button type="button" class="btn btn-danger" >Danger</button>
+            <button type="button" class="btn btn-info ">Info</button>
+          </div>
+          <div class="col-sm-4">
+            <h6>Button tags (a tag, input tag)</h6>
+            <a class="btn btn-primary" href="#" role="button">Link</a>
+            <button class="btn btn-success" type="submit">Submit</button>
+            <input class="btn btn-dark" type="submit" value="Submit">
+            <input class="btn btn-warning" type="reset" value="Reset">
+          </div>
+          <div class="col-sm-4">
+            <h6>Button Outine(btn btn-outline-primary)</h6>
+            <button type="button" class="btn btn-outline-primary">Primary</button>
+            <button type="button" class="btn btn-outline-secondary">Secondary</button>
+            <a class="btn btn-outline-primary" href="#" role="button">Link</a>
+            <input class="btn btn-outline-warning" type="reset" value="Reset">
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-sm-4">
+            <h6>buttons(btn-lg/btn-sm)</h6>
+            <button type="button" class="btn btn-primary btn-lg">Large button</button>
+            <button type="button" class="btn btn-secondary btn-sm">Small button</button>
+          </div>
+          <div class="col-sm-4">
+            <h6>Buttons(btn-block)& active</h6>
+            <button type="button" class="btn btn-primary btn-sm btn-block">Block level button</button>  
+            <a href="#" class="btn btn-primary btn-sm active"  role="button" aria-pressed="true">Primary link</a>
+          </div>
+          <div class="col-sm-4">
+            <h6>Buttons(btn-group)</h6>
+            <div class="btn-group" role="group">
+              <button type="button" class="btn btn-secondary btn-lg">Button1</button>
+              <button type="button" class="btn btn-secondary btn-lg">Button2</button>
+            </div>
+            <hr>
+          </div>
+        <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button> 
+      </div>
+        <hr>
+        <div class="row">
+          <div class="col-sm-4">
+            <h6>Buttons(btn-toolbar)</h6>
+            <div class="btn-toolbar" role="toolbar">
+              <div class="btn-group mr-2" role="group">
+                <button type="button" class="btn btn-secondary">Button1</button>
+                <button type="button" class="btn btn-secondary">Button2</button>
+              </div>
+              <div class="btn-group mr-2" role="group" aria-label="Second group">
+                <button type="button" class="btn btn-secondary">Button3</button>
+                <button type="button" class="btn btn-secondary">Button4</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <h6>Radio Buttons</h6>
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+              <label class="btn btn-warning active">
+                <input type="radio" name="options" id="option1" autocomplete="off" checked> Active
+              </label>
+              <label class="btn btn-warning">
+                <input type="radio" name="options" id="option2" autocomplete="off"> Radio
+              </label>
+              <label class="btn btn-warning">
+                <input type="radio" name="options" id="option3" autocomplete="off"> Radio
+              </label>
+            </div>
+          </div>
+          <div class="col-sm-4">
+          <h6>Button group with nested dropdown</h6>
+          <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+            <button type="button" class="btn btn-primary">1</button>
+            <button type="button" class="btn btn-primary">2</button>
+          
+            <div class="btn-group" role="group">
+              <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Location
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                <a class="dropdown-item" href="https://chennai.nic.in/">Chennai</a>
+                <a class="dropdown-item" href="#">Bangalore</a>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+    <hr>
+    <div class="text-center">
+    <h1 class="display-4">Images in Bootstrap4</h1> 
+    <hr>
+    <div class="row">
+      <div class="col-sm-4"><br>
+        <h5>img-rounded/rounded</h5>
+        <img class="img-responsive rounded" src="C:\Users\KK COMPUTERS\Desktop\just\cricket-ball.jpg" width="350" height="200"> 
+      </div>
+      <div class="col-sm-4"><br>
+        <h5>img-circle/rounded-circle</h5>
+        <img class="img-responsive rounded-circle" src="C:\Users\KK COMPUTERS\Desktop\just\cricket-ball.jpg" width="350" height="200"> 
+      </div>
+      <div class="col-sm-4"><br>
+        <h5>img-responsive thumbnail</h5>
+        <img class="img-responsive img-thumbnail" src="C:\Users\KK COMPUTERS\Desktop\just\cricket-ball.jpg" width="350" height="200"> 
+      </div>
+  </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4"><br>
+        <h5>img-fluid thumbnail</h5>
+        <img class="img-fluid img-thumbnail shadow-2-strong" src="C:\Users\KK COMPUTERS\Desktop\just\scenary1.jpg" width="350" height="200"> 
+      </div>
+        <div class="col-sm-8"><br>
+        <h5>img-fluid rounded float-right</h5>
+        <img class="img-fluid rounded float-right" src="C:\Users\KK COMPUTERS\Desktop\just\scenary1.jpg" width="350" height="200"> 
+        </div>
+    </div>
+    <div class="row">
+        <hr> 
+        <div class="col-sm-12"><br>
+            <h5>img-fluid rounded mx-auto d-block</h5>
+            <img class="img-fluid rounded mx-auto d-block" src="C:\Users\KK COMPUTERS\Desktop\just\scenary1.jpg" width="350" height="200"> 
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-sm-6"><br>
+        <h5>figure-img img-fluid rounded</h5>
+        <figure class="figure">
+            <hr>
+            <img src="C:\Users\KK COMPUTERS\Desktop\just\scenary1.jpg" class="figure-img img-fluid rounded">
+            <figcaption class="figure-caption text-right"> fig4.3 Scenary picture </figcaption>
+        </figure>
+        </div>
+    </div>
+    <hr>
+    <h5>picture tag</h5>
+            <picture>
+                <source media="(min-width: 800px)" srcset="C:\Users\KK COMPUTERS\Desktop\just\dom1.jpg" type="image/svg+xml">
+                <source media="(min-width: 600px)" srcset="C:\Users\KK COMPUTERS\Desktop\just\dom2.jpg" type="image/svg+xml">
+                <img class=".img-* img-fluid img-thumbnail" src="C:\Users\KK COMPUTERS\Desktop\just\scenary1.jpg" style="width:auto;">
+            </picture>
+              <table class="table">
+                <thead>
+                <tr>
+                    <th colspan="2"> image,picture,figure in Bootstrap 4
+                </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>image</td>
+                        <td> <ul>
+                            <li>Images in Bootstrap are made responsive with .img-fluid. max-width: 100%; and height: auto; are applied to the image so that it scales with the parent element.</li>
+                            <li> Some of the classes for img. are rounded float-left, float-right , img-thumbnail, mx-auto d-block</li>
+                        </ul></td>
+                    </tr>
+                    <tr>
+                        <td>picture</td>
+                        <td> Using the picture element we can specify multiple source elements to resize according to the given screen-size </td>
+                    </tr>
+                    <tr>
+                        <td>figure</td>
+                        <td><ul>
+                            <li>Anytime you need to display a piece of content—like an image with an optional caption, consider using a figure element.</li>
+                            <li> Some of the classes for figure are .figure , .figure-img and .figure-caption </li>
+                        </ul></td>
+                    </tr>
+                </tbody>
+            </table>
+       <div class="row">
+         <div class="col-sm-4">
+          <h6>Card(card,card-title,card-subtitle)</h6>
+          <div class="card" style="width: 300px;">
+            <img class="card-img-top" src="C:\Users\KK COMPUTERS\Desktop\just\rahane.jpg">
+            <div class="card-body">
+              <h5 class="card-title">Ajinkya Rahane</h5>
+              <h6 class="card-subtitle text-muted">Vice captain of Indian Test team</h6>
+              <p class="card-text">Test debut : Vs Australia at Arun Jaitley Stadium, Mar 22, 2013</p>
+              <a href="https://www.cricbuzz.com/profiles/1447/ajinkya-rahane#!#profile" class="btn btn-primary">Profile</a>
+            </div>
+          </div>
+         </div>
+         <div class="col-sm-8">
+          <h6>Some differences between Bootstrap4 and Bootstrap5</h6>
+          <table class="table table-striped">
+            <thead class="thead-dark">
+            <tr>
+                <th>BOOTSTRAP 4</th>
+                <th>BOOTSTRAP 5</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>It has 5 tier (xs, sm, md, lg, xl).</td>
+                    <td>It has 6 tier (xs, sm, md, lg, xl, xxl).</td>
+                </tr>
+                <tr>
+                    <td>It has limited colors./td>
+                    <td>Extra colors added with improved color palette.</td>
+                </tr>
+                <tr>
+                    <td>Bootstrap 4 doesn’t have its own SVG icons we have to font-awesome</td>
+                    <td>Bootstrap 5 have its own SVG icons</td>
+                </tr>
+                <tr>
+                    <td>Jumbotron	It supports.</td>
+                    <td>It doesn’t support jumbotron.</td>
+                </tr>
+                <tr>
+                  <td>It has jquery and all related plugins.</td>
+                  <td>Jquery is removed and switched to vanilla JS with some working plugins</td>
+              </tr>
+            </tbody>
+        </table>
+         </div>
+       </div> 
+       <blockquote class="blockquote text-right">
+        <p class="mb-0">blockquote : The Contents in the page are in bootstrap version 4</p>
+        <footer class="blockquote-footer">Practiced by<cite title="Source Title">Chandru</cite></footer>
+      </blockquote>  
+    </div>
+ 
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
