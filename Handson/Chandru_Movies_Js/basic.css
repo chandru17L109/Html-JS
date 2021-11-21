@@ -1,0 +1,16 @@
+.main-heading{
+    font-family:cursive;
+    font-size: 20px;
+    color: #b92d2d;
+}
+
+.heart-color{
+    color: red;
+}
+
+.current-section{
+    color: rgb(225, 65, 86);
+    font-size: 25px;
+    margin-left: 35px;
+    font-family: cursive;
+}

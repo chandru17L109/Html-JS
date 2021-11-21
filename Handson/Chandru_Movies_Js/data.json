@@ -1,0 +1,57 @@
+{
+  "movies": [
+    {
+      "Id": 1,
+      "Name": "Thupaki",
+      "Actor": "Vijay",
+      "Rating": 8.7,
+      "Director": "A R Murugadhase",
+      "Music": "Harrish",
+      "ReleaseDate": "10/27/2016",
+      "Country": "India",
+      "platform": "Theatre",
+      "image": "http://1.bp.blogspot.com/-jJOgGvyyqXM/UG50tMlUJPI/AAAAAAAA8OU/ao_WRSvGtJ8/s1600/Thuppakki+Movie+Audio+Launch.jpg",
+      "description": "Thuppakki (Gun) is a 2012 Indian Tamil-language action thriller film written and directed by AR Murugadoss. Produced by Kalaippuli S. Thanu under his studio V Creations, and distributed by Gemini Film Circuit, the film stars Vijay and Kajal Aggarwal, with Sathyan, Vidyut Jammwal, Jayaram, Manobala and Zakir Hussain in supporting roles. It revolves around an intelligence officer in the Indian Army on a mission to track down, destroy and deactivate a sleeper cell, after witnessing and barely escaping a bomb blast executed by the cell."
+    },
+    {
+      "Id": 2,
+      "Name": "Aarambham",
+      "Actor": "Ajith",
+      "Rating": 7.6,
+      "Director": "Vishnuvardhan",
+      "Music": "Yuvan Shankar Raja",
+      "ReleaseDate": "12/27/2015",
+      "Country": "India",
+      "platform": "Theatre",
+      "image": "https://static.toiimg.com/thumb/msid-61275246,width-219,height-317,imgsize-62209/61275246.jpg",
+      "description": "Arrambam (English: Beginning) is a 2013 Indian Tamil-language action thriller[2] film directed by Vishnuvardhan. Produced by A. Raghuram and co-written by Subha, the film features Ajith Kumar, Arya, Nayantara and Taapsee Pannu in the lead roles and Kishore, Rana Daggubati, Akshara Gowda in supporting roles. While the score and soundtrack of the film were composed by Yuvan Shankar Raja, the cinematography was handled by Om Prakash and editing by A. Sreekar Prasad."
+    },
+    {
+      "Id": 3,
+      "Name": "Squid",
+      "Actor": "Lee Jung-jae",
+      "Rating": 8.8,
+      "Director": "Hwang Dong-hyuk",
+      "Music": "Wi Ha-joon",
+      "ReleaseDate": "05/27/2021",
+      "Country": "Korean",
+      "platform": "OTT",
+      "image": "https://upload.wikimedia.org/wikipedia/en/d/dd/Squid_Game.jpg",
+      "description": "Squid Game (Korean: 오징어 게임; RR: Ojing-eo Geim) is a South Korean survival drama streaming television series created by Hwang Dong-hyuk for Netflix. Its cast includes Lee Jung-jae, Park Hae-soo, Wi Ha-joon, Jung Ho-yeon, O Yeong-su, Heo Sung-tae, Anupam Tripathi, and Kim Joo-ryoung."
+    },
+    {
+      "Id": 4,
+      "Name": "Money Heist",
+      "Actor": "Álvaro Morte",
+      "Rating": 8.2,
+      "Director": "Álex Pina",
+      "Music": "Manel Santisteban",
+      "ReleaseDate": "12/30/2021",
+      "Country": "Korean",
+      "platform": "OTT",
+      "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQcEazg1RHMebusfpj_3nR8f-d_CgNLxAc0Wm9foVDza9M4hKcf",
+      "description": "Money Heist (Spanish: La casa de papel,The House of Paper) is a Spanish heist crime drama television series created by Álex Pina. The series traces two long-prepared heists led by the Professor (Álvaro Morte), one on the Royal Mint of Spain, and one on the Bank of Spain, told from the perspective of one of the robbers, Tokyo (Úrsula Corberó). The narrative is told in a real-time-like fashion and relies on flashbacks, time-jumps, hidden character motivations, and an unreliable narrator for complexity."
+    }
+  ],
+  "favourites": []
+}

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.grid-container {
+  display: grid;
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 10px 0px;
+  font-size: 20px;
+}
+
+.item1 {
+  grid-area: 1 / 1 / 3 / 2;
+}
+
+.item2 {
+  grid-area: 1 / 2 / 1 / 5;
+}
+
+.item3 {
+  grid-area: 1 / 5 / 4 / 6;
+}
+
+.item4 {
+  grid-area: 2 / 2 / 3 / 5;
+}
+
+.item5{
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+.item6{
+    grid-area: 3 / 2 / 4 / 5;
+}
+
+.item7{
+    grid-area: 4 / 1 / 8 / 6;
+}
+
+body{background-image: url('C:/Users/KK COMPUTERS/Desktop/React_/Html/Tags/bgimg.jpg');}
+table,th {
+    padding: 10px;
+    border-spacing: 10px;
+  border: 5px dotted rgb(221, 15, 94);
+}
+td {
+  border-style:dotted solid;
+  color: blue;
+}
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+.formtable{
+    border: 0px;
+    color: black;
+    padding-left: 80px;
+}
+
+</style>
+</head>
+<body>
+
+<h1 style="background-color: rgb(255, 29, 86); color: rgb(255, 255, 255); text-align:center; padding: 10px;">Day 2 assignments using grid-container</h1>
+
+<div class="grid-container">
+  <div class="item1">
+    <p style="background-color: rgb(255, 29, 86); color: rgb(255, 255, 255); text-align:center; padding: 10px;">Cell and border style</p>
+     <table class="center">
+        <tr>
+          <th>sports</th>
+          <th>favourite</th>
+        </tr>
+        <tr>
+          <td>Cricket Men</td>
+          <td>M S Dhoni</td>
+        </tr>
+        <tr>
+          <td>Cricket Women</td>
+          <td>Mandhana</td>
+        </tr>
+        <tr>
+          <td>Football</td>
+          <td>L Messi</td>
+        </tr>
+      </table>
+  </div>
+  <div class="item2">
+    <p> progress tag<p>
+    <label for="file">Downloading progress:</label>
+    <progress id="file" value="32" max="100"> 32% </progress><br>
+    <label for="file">Default value is 1</label>
+    <progress id="file" value="0.7"> 70% </progress>
+  </div>
+    <div class="item3">
+        <p>embed tag</p>
+    <embed type="video/webm" src="C:\Users\KK COMPUTERS\Videos\Captures\Adobe XD 2021-02-08 02-30-37.mp4" width="200" height="500">
+    </div>
+    <div class="item4">
+        <p>The address tag<p>
+        <address>
+        Written by <a href="mailto:webmaster@example.com">Jon Doe</a>.<br>
+        Visit us at:<br>
+        Example.com<br>
+        Box 564, Disneyland<br>
+        USA
+        </address>
+    </div>
+    <div class="item5">
+        <p>The canvas element</p>
+        <canvas id="myCanvas">
+        </canvas>
+        <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.fillStyle = "red";
+        ctx.fillRect(30, 10, 85, 60);
+
+        //Turn transparency on
+        ctx.globalAlpha = 0.8;
+        ctx.fillStyle = "blue"; 
+        ctx.fillRect(60, 30, 85, 60); 
+        ctx.fillStyle = "green"; 
+        ctx.fillRect(90, 60, 85, 60);
+        </script>
+    </div>
+
+    <div class="item6">
+        <p style="color: rgb(241, 12, 60);">abbr tag</p><p>The tri-color <abbr title="World Health Organization"> LED </abbr> looks beautiful .</p>
+        <p style="color: rgb(238, 12, 60);">bdo and bdi tag </p><p><bdo dir="rtl"> Haiii, I am <bdi>Chandru</bdi> from ECE department</bdo></p>
+    </div>
+
+    <div class="item7">
+        <form action="#">
+        <table class ="formtable">
+            <p style="background-color: rgb(255, 29, 86); color: rgb(255, 255, 255); text-align:center; padding: 10px;">Internship Form</p>
+            <tr class ="formtable">
+                <td class ="formtable">Full Name</td>
+                <td class ="formtable"> <input type="text" required autofocus> </td>
+            </tr>
+            <tr class ="formtable">
+                <td class ="formtable">Candidate ID</td>
+                <td class ="formtable"> <input type="text" maxlength="6" required> </td>
+            </tr>
+            <tr class ="formtable">
+                <td class ="formtable">Email-Id</td>
+                <td class ="formtable"> <input type="email" required> </td>
+            </tr>
+            <tr class ="formtable">
+                <td class ="formtable">Date of Birth</td>
+                <td class ="formtable"> <input type="date"  min="2000-06-01" required> <br><i style="font-size: small;">DOB Before 1-6-2000</i> </td>
+            </tr>
+            <tr class ="formtable">
+                <td class ="formtable">Mobile Number</td>
+                <td class ="formtable"> <input type="text"  pattern="[789][0-9]{9}" required> </td>
+            </tr>
+            <tr class ="formtable">
+                <td class ="formtable">Gender</td>
+                <td class ="formtable"> <input type="radio" name="gender" value="male" > Male </td>
+                <td class ="formtable"> <input type="radio" name="gender" value="female" > Female </td>
+
+            </tr>
+            <tr class ="formtable">
+                <td class ="formtable">Preferred Locations</td>
+                <td class ="formtable"> 
+                    <input list="Location">
+                    <datalist>
+                      <option value="Chennai">
+                      <option value="Bangalore">
+                      <option value="Kochin">
+                      <option value="Pune">
+                      <option value="Coimbatore">
+                        <option value="Calcuta">
+                    </datalist>
+                    <br><i style="font-size: small;">Location 1</i> </td>
+                    <td class ="formtable"> 
+                        <input list="Location" name="Location">
+                        <datalist id="Location">
+                          <option value="Chennai">
+                          <option value="Bangalore">
+                          <option value="Kochin">
+                          <option value="Pune">
+                          <option value="Coimbatore">
+                            <option value="Calcuta">
+                        </datalist>
+                    <br><i style="font-size: small;">Location 2</i> </td>
+            </tr>
+            <tr class ="formtable">
+                <td class ="formtable">Address</td>
+                <td class ="formtable"><textarea rows = "3" cols = "20"> </textarea></td>
+            </tr>
+            <tr class ="formtable">
+                <td class ="formtable">Comments</td>
+                <td class ="formtable"><textarea rows="3" cols="20" placeholder="Any Comments/Queries..."></textarea></td>
+            </tr>
+            <tr class ="formtable">
+                <td class ="formtable">Call Letter form</td>
+                <td class ="formtable"> <input type="file" required></td>
+            </tr>
+            <tr class ="formtable">
+                <td class ="formtable"></td>
+                <td class ="formtable"><input type="submit" value="Submit"> <input type="reset"> </td>
+            </tr>
+            
+        </table>
+    </form>
+    </div>
+</div>
+<footer style="background-color: rgb(255, 86, 128); padding: 2px;">
+    <p style="color: white;">Author: Chandru  <a href="mailto:hege@example.com">chandru@98.com</a> </p>
+    <p style="color: rgb(0, 0, 0);">Copyrights@2021</p>
+</footer>
+</body>
+</html>
